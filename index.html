@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мастер Класс</title>
+    <title>Мастер-класс: Нейросеть и Лидерство</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -50,7 +50,7 @@
             font-weight: 700;
             letter-spacing: -.005em;
             margin-bottom: 16px;
-            background: linear-gradient(120deg, #1d1d1f, #424245);
+            background: linear-gradient(120deg, #1d1d1f, #0066cc);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -90,7 +90,7 @@
         }
 
         .preview-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
             height: 180px;
             display: flex;
             align-items: center;
@@ -162,13 +162,13 @@
         }
 
         .btn-primary {
-            background: #0071e3;
+            background: #0066cc;
             color: white;
             border: none;
         }
 
         .btn-primary:hover {
-            background: #0077ed;
+            background: #004499;
         }
 
         .btn-icon {
@@ -199,7 +199,7 @@
         }
 
         .footer-links a:hover {
-            color: #0071e3;
+            color: #0066cc;
         }
 
         @media (max-width: 734px) {
@@ -235,24 +235,24 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">InnovationLab</div>
-            <h1>Презентация проекта</h1>
-            <p class="subtitle">Нейросеть и Лидерство</p>
+            <div class="logo">Мастер-класс</div>
+            <h1>Нейросеть и Лидерство</h1>
+            <p class="subtitle">Искусственный интеллект в современном образовании</p>
         </header>
 
         <div class="main-content">
             <div class="preview-card">
                 <div class="preview-header">
-                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-brain"></i>
                 </div>
                 <div class="preview-body">
                     <h3 class="preview-title">Презентация 2025</h3>
                     <p class="preview-description">
-                        Презентация с Мастер-класса!
+                        Материалы с мастер-класса по использованию нейросетей в образовательном процессе и развитии лидерских качеств.
                     </p>
                     <div class="file-info">
                         <i class="far fa-file-powerpoint"></i>
-                        <span>Формат: PowerPoint</span>
+                        <span>Формат: PowerPoint · 18 слайдов</span>
                     </div>
                 </div>
             </div>
@@ -265,22 +265,22 @@
                     </a>
                     
                     <a href="https://example.com" target="_blank" class="btn">
-                        <i class="btn-icon fas fa-globe"></i>
+                        <i class="btn-icon fas fa-copy"></i>
                         Сайт с текстом для копирования
                     </a>
                     
-                    <a href="https://t.me/example" target="_blank" class="btn">
-                        <i class="btn-icon fab fa-telegram"></i>
+                    <a href="https://chat.deepseek.com" target="_blank" class="btn">
+                        <i class="btn-icon fas fa-robot"></i>
                         Нейросеть DeepSeek
                     </a>
                     
-                    <a href="mailto:info@example.com" class="btn">
-                        <i class="btn-icon fas fa-envelope"></i>
+                    <a href="https://gigachat.ai" target="_blank" class="btn">
+                        <i class="btn-icon fas fa-comment"></i>
                         Нейросеть ГигаЧат 
                     </a>
                     
-                    <a href="https://linkedin.com/company/example" target="_blank" class="btn">
-                        <i class="btn-icon fab fa-linkedin"></i>
+                    <a href="https://yandex.ru/alice" target="_blank" class="btn">
+                        <i class="btn-icon fas fa-assistive-listening-systems"></i>
                         Нейросеть Яндекс Алиса
                     </a>
                 </div>
@@ -316,9 +316,23 @@
             // Добавляем подтверждение скачивания
             const downloadBtn = document.querySelector('.btn-primary');
             downloadBtn.addEventListener('click', function(e) {
-                if(!confirm('Скачать презентацию?')) {
+                if(!confirm('Скачать презентацию с мастер-класса?')) {
                     e.preventDefault();
+                } else {
+                    // Можно добавить здесь аналитику или отслеживание скачиваний
+                    console.log('Презентация скачана');
                 }
+            });
+
+            // Добавляем анимацию для кнопок при наведении
+            document.querySelectorAll('.btn').forEach(btn => {
+                btn.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px) scale(1.02)';
+                });
+                
+                btn.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
             });
         });
     </script>
